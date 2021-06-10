@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+	<TargetFramework>netcoreapp3.1</TargetFramework>
+	<PackageId>Femboy</PackageId>
+    <Company>FemboyImages</Company>
+    <Product>Literally A Femboy</Product>
+    <Authors>abby</Authors>
+    <UseWPF>true</UseWPF>
+	<AssemblyName>FemboyApp</AssemblyName>
+	<ApplicationIcon>cute.ico</ApplicationIcon>
+	<StartupObject>WpfApp1.App</StartupObject>
+	<RootNamespace>Femboy</RootNamespace>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <ErrorReport>none</ErrorReport>
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <None Remove="femboy.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="femboy.jpg" />
+  </ItemGroup>
+
+</Project>
